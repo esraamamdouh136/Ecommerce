@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "About": ["About Us", "Our Stores", "Contact Us"],
+    "New in": "New in",
+    "Sale": "Sale",
+    "Colthes": ["Denims", "Dresses", "Lingerie", " Shirts"],
+    "Shoes": ["Classics", "Extravaganza"],
+    "Accessoires": ["Bags", "Sunglasses"],
+    "Blog": "Blog",
+    "Main Shop": {
+      "Shop Layouts": ["With Left Sidebar", "Right Sidebar & Quick View", "Fullwidth Overview", "Catalog Mode", "Product Grids"],
+      "Product Pages": ["Extended Layout",
+        "With Left Sidebar",
+        "With Right Sidebar",
+        "Fullwidth & Showcase",
+        "Single Product",
+        "With Variations",
+        "Any Widgets In Sidebar",
+        "Catalog Mode",
+        "Landing Page"
+      ],
+      "Other Pages": ["Cart", "Checkout Layouts", "My account"]
+    }
+  }
+}
