@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
 body {
-    margin: 0px;
-    padding: 0px;
+  font-family: 'Castoro', serif !important;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex !important;
 }

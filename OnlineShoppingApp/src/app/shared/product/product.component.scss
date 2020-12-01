@@ -1,0 +1,54 @@
+.product {
+  .card-4 {
+    position: relative;
+
+    .overlay-circle {
+      position: absolute;
+      background-color: #f71b6e7a;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    img {
+      height: 400px;
+      width: 100%;
+    }
+
+    .product-caption {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      font-size: 11px;
+      padding: 10px;
+      transition: transform .3s linear, bottom .3s linear;
+      -moz-transition: transform .3s linear, bottom .3s linear;
+      -webkit-transition: transform .3s linear, bottom .3s linear;
+    }
+  }
+
+  .card-4:hover .overlay-circle {
+    visibility: visible;
+    opacity: 1;
+    transition: transform .3s linear, opacity .3s linear, visibility .3s linear;
+    -moz-transition: transform .3s linear, opacity .3s linear, visibility .3s linear;
+    -webkit-transition: transform .3s linear, opacity .3s linear, visibility .3s linear;
+  }
+
+  .card-4:hover .product-caption {
+    bottom: 36%;
+    transition: transform .3s linear, bottom .3s linear;
+    -moz-transition: transform .3s linear, bottom .3s linear;
+    -webkit-transition: transform .3s linear, bottom .3s linear;
+  }
+
+
+  span.price {
+    position: absolute;
+    z-index: 9;
+    background-color: #9d4d97;
+    color: white;
+    padding: 4px;
+  }
+}

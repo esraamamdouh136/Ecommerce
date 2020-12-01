@@ -1,0 +1,43 @@
+{
+  "dropdownList": [{
+      "item_id": 1,
+      "item_text": "Accessoires"
+    },
+    {
+      "item_id": 2,
+      "item_text": "Bags"
+    },
+    {
+      "item_id": 3,
+      "item_text": "Sunglasses"
+    },
+    {
+      "item_id": 4,
+      "item_text": "Clothes"
+    },
+    {
+      "item_id": 5,
+      "item_text": "Denims"
+    },
+    {
+      "item_id": 6,
+      "item_text": "Dresses"
+    },
+    {
+      "item_id": 7,
+      "item_text": "Shirts"
+    },
+    {
+      "item_id": 8,
+      "item_text": "Shoes"
+    },
+    {
+      "item_id": 9,
+      "item_text": "Classic"
+    },
+    {
+      "item_id": 10,
+      "item_text": "Extravaganza"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+.carousel-item {
+  img {
+    height: 450px ;
+  }
+  .right {
+    position: relative;
+  }
+  .caption {
+    font-weight: 300;
+    position: absolute;
+    flex-flow: nowrap;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 99;
+    top: 75px;
+    left: 80px;
+
+    h2 {
+      font-size: 55px;
+      letter-spacing: 3px;
+      span{
+        color: #e62e7e;
+      }
+    }
+  }
+  .d-flex {
+    font-size: 45px;
+    padding-top:10px ;
+    color:  #e62e7e;
+    
+
+    h2 {
+      font-size: 3.5rem;
+      color: black;
+      padding-left: 3px;
+      span{
+        color:  #e62e7e;
+
+      }
+    }
+    h3 {
+      letter-spacing: 2px;
+      color:#828282 !important;
+
+    }
+  }
+}
+
+
+@media only screen and (max-width : 992px) {
+  .caption {
+    top: 110px !important;
+    h2 {
+      font-size: 16px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+    padding-left: 5px !important;
+  }
+}
+
+.d-flex {
+  font-size: 16px !important;
+ 
+  h2 {
+    font-size: 16px !important;
+
+  }
+  
+}
+.btn-lg, .btn-group-lg > .btn {
+  font-size: 16px !important;
+}
+}

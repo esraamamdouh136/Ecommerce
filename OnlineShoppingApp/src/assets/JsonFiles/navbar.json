@@ -1,25 +1,78 @@
 {
-  "navbar": {
-    "About": ["About Us", "Our Stores", "Contact Us"],
-    "New in": "New in",
-    "Sale": "Sale",
-    "Colthes": ["Denims", "Dresses", "Lingerie", " Shirts"],
-    "Shoes": ["Classics", "Extravaganza"],
-    "Accessoires": ["Bags", "Sunglasses"],
-    "Blog": "Blog",
-    "Main Shop": {
-      "Shop Layouts": ["With Left Sidebar", "Right Sidebar & Quick View", "Fullwidth Overview", "Catalog Mode", "Product Grids"],
-      "Product Pages": ["Extended Layout",
-        "With Left Sidebar",
-        "With Right Sidebar",
-        "Fullwidth & Showcase",
-        "Single Product",
-        "With Variations",
-        "Any Widgets In Sidebar",
-        "Catalog Mode",
-        "Landing Page"
-      ],
-      "Other Pages": ["Cart", "Checkout Layouts", "My account"]
-    }
-  }
+  "items" : [
+    {"item" : "Home"},
+    {"item" :  "About" ,
+      "Submenu" :[
+        {"name" : "About Us" }, 
+        {"name" : "Our Stores"}, 
+        {"name" :"Contact Us"}
+       ]
+    }, 
+    {"item" :  "New In" },
+    {"item" :  "Sale" },
+    {"item" :  "Colthes",
+      "Submenu" : [
+        {"name" : "Denims"}, 
+        {"name" : "Dresses"}, 
+        {"name" : "Lingerie"}, 
+        {"name" : "Shirts"}
+      ]  
+    },
+    {"item" :  "Shoes" ,
+      "Submenu" : [
+      {"name" : "Classics"}, 
+      {"name" : "Extravaganza"}
+    ]
+    },
+    {"item" :  "Accessoires",
+      "Submenu" : [
+        {"name" :"Bags"}, 
+        {"name" :"Sunglasses"}
+      ]
+     },
+    {"item" :  "Blog" },
+    {"item" : "Main Shop",
+      "Submenu" : [
+       {"name" : "Shop Layouts",
+        "sub" : [
+          {"name" : "With Left Sidebar"},   
+          {"name" : "Right Sidebar & Quick View"},  
+          {"name" : "Fullwidth Overview"},  
+          {"name" : "Catalog Mode"},   
+          {"name" : "Product Grids"}
+        ]
+      
+      },
+       {"name" : "Product Pages",
+        "sub":[
+          {"name" : "Extended Layout"},
+          {"name" : "With Left Sidebar"},
+          {"name" : "With Right Sidebar"},
+          {"name" : "Fullwidth & Showcase"},
+          {"name" : "Single Product"},
+          {"name" : "With Variations"},
+          {"name" : "Any Widgets In Sidebar"},
+          {"name" : "Catalog Mode"},
+          {"name" : "Landing Page"}
+        ]
+      },
+       {"name" : "Other Pages",
+        "sub" : [
+          {"name" : "Cart"}, 
+          {"name" : "Checkout Layouts"}, 
+          {"name" : "My account"}
+
+        ]
+      }
+
+      ] 
+    }  
+]
 }
+
+
+
+
+
+
+

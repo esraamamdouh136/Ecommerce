@@ -1,0 +1,19 @@
+{
+    "sliders" : 
+    [{
+        "image" : "../../../assets/image/Slider/slider-17.jpeg",
+        "class" : " active"
+    },
+    {
+        "image" : "../../../assets/image/Slider/slider-16.jpeg"
+    },
+    {
+        "image" : "../../../assets/image/Slider/slider-14.jpeg"
+    },
+    {
+        "image" : "../../../assets/image/Slider/slider-15.jpeg"
+    }
+  
+  
+]
+}

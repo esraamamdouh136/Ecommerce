@@ -3,7 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SharedComponent } from './shared/shared.component';
 import { HomeComponent } from './shared/home/home.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { ProductComponent } from './shared/product/product.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {HttpClientModule} from'@angular/common/http';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,11 +17,17 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppComponent,
     SharedComponent,
     HomeComponent,
+    NavbarComponent, HeaderComponent ,
+    ProductComponent
+
     
   ],
   imports: [
     BrowserModule,
-    MDBBootstrapModule.forRoot()  
+    HttpClientModule,
+    MDBBootstrapModule.forRoot(),
+    NgMultiSelectDropDownModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicesService } from 'src/app/services.service';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() {
+   public sliders : any = [] ;
+  constructor(public Services : ServicesService) {
    }
 
   ngOnInit(): void {
+    this.Services.getsliders().subscribe( res => this.sliders = res)
 
   }
 }
+
