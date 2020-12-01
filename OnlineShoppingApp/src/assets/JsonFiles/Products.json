@@ -52,7 +52,7 @@
             "id" : 7,
             "name" : "P R O D U C T N A M E",
             "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
-            "image" : "../../../assets/image/Product/product-14.jpeg",
+            "image" : "../../../assets/image/Product/product-15.jpeg",
             "price" : "350 L.E"
             
         },
@@ -85,6 +85,30 @@
         "name" : "P R O D U C T N A M E",
         "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
         "image" : "../../../assets/image/Product/product-14.jpeg",
+        "price" : "450 L.E"
+        
+    },
+    {
+        "id" : 12,
+        "name" : "P R O D U C T N A M E",
+        "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "image" : "../../../assets/image/Product/product-2.jpeg",
+        "price" : "450 L.E"
+        
+    },
+    {
+        "id" : 13,
+        "name" : "P R O D U C T N A M E",
+        "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "image" : "../../../assets/image/Product/product-5.jpeg",
+        "price" : "450 L.E"
+       
+    },
+    {
+        "id" : 14,
+        "name" : "P R O D U C T N A M E",
+        "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "image" : "../../../assets/image/Product/product-6.jpeg",
         "price" : "450 L.E"
         
     }

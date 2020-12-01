@@ -6,11 +6,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './product/product.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [SharedComponent, NavbarComponent, HomeComponent, HeaderComponent, ProductComponent],
+  declarations: [SharedComponent, NavbarComponent, HomeComponent, HeaderComponent, ProductComponent, FooterComponent],
   imports: [
     CommonModule,
     SharedRoutingModule

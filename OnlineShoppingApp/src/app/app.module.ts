@@ -5,6 +5,7 @@ import { SharedComponent } from './shared/shared.component';
 import { HomeComponent } from './shared/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { ProductComponent } from './shared/product/product.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {HttpClientModule} from'@angular/common/http';
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     SharedComponent,
     HomeComponent,
+    FooterComponent,
     NavbarComponent, HeaderComponent ,
     ProductComponent
 

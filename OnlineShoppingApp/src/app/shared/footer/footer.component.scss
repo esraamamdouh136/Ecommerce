@@ -1,0 +1,44 @@
+.footer {
+    p{
+      color:rgb(44, 44, 44);
+      letter-spacing: 1.2px;
+    }
+  .line {
+    height: 100px;
+    width: 2px;
+    background:  rgb(44, 44, 44);
+    margin: 30px auto;
+
+  }
+  .logo {
+      width: 15%;
+      margin: auto;
+      display: block;
+  }
+  .soical-media{
+    justify-content: center;
+    margin: 25px 0px;
+
+    a{
+        color:  rgb(44, 44, 44);
+    }
+
+  }
+  .line-2 {
+    height: 60px;
+    width: 2px;
+    background: rgb(44, 44, 44);
+    margin: 30px auto; 
+  }
+  input.form-control {
+    width: 33%;
+    margin: 30px auto;
+}
+button.btn.btn-dark {
+    width: 34%;
+    margin: auto;
+    display: block;
+    background-color: #de2866;
+    border-color: pink;
+}
+}

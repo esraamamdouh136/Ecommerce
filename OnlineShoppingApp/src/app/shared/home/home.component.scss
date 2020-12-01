@@ -50,20 +50,34 @@
 @media only screen and (max-width : 992px) {
   .caption {
     top: 110px !important;
+    color: white !important;
     h2 {
-      font-size: 16px !important;
+      font-size: 18px !important;
   }
   h3 {
-    font-size: 16px !important;
+    font-size: 18px !important;
     padding-left: 5px !important;
+    color: white !important;
+
+  }
+  p {
+    font-size: 13px !important;
   }
 }
 
 .d-flex {
   font-size: 16px !important;
+  color: white !important;
+
  
   h2 {
     font-size: 16px !important;
+    color: white !important;
+
+  }
+
+  h3 {
+    color: white !important;
 
   }
   

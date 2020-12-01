@@ -12,12 +12,15 @@
 
 <div class="mx-5">
     <div class="row product">
-            <div class="col-md-3 mt-3" *ngFor="let Product of Products.products ; let i = index">
-                <a href="#" *ngIf="i<=3">
+        <ng-container *ngFor="let Product of Products.products ; let i = index">
+            <div class="col-md-3 mt-5" *ngIf="i<=3">
+              
                 <span class="price">{{Product.price}}</span>
                 <div class="card-4">
                     <div class="overlay-circle"></div>
+                 
                     <img src="{{Product.image}}" class="img-fluid">
+               
                     <div class="product-caption">
                         <div class="d-flex">
                             <p><i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
@@ -27,12 +30,14 @@
                         <div class="description">
                             <h6>{{Product.Description}}</h6>
                         </div>
+                        <a href="#" class="text-white"><u>More Detials</u></a>   
                     </div>
-                </div>
-            </a>           
+                </div>        
         </div>
-        <div class="col-md-6 mt-2 " *ngFor="let Product of Products.products ; let i = index">
-            <a href="#" *ngIf="i>3 && i<=5">
+        </ng-container>
+        <ng-container *ngFor="let Product of Products.products ; let i = index">
+        <div class="col-md-6 mt-5" *ngIf="i > 3 && i <=6" >
+            <a href="#" >
             <span class="price">{{Product.price}}</span>
             <div class="card-4">
                 <div class="overlay-circle"></div>
@@ -46,12 +51,15 @@
                     <div class="description">
                         <h6>{{Product.Description}}</h6>
                     </div>
+                    <a href="#" class="text-white"><u>More Detials</u></a>   
                 </div>
             </div>
         </a>           
     </div>
-    <div class="col-md-3 mt-2 " *ngFor="let Product of Products.products ; let i = index">
-        <a href="#" *ngIf="i>5 && i<=9">
+</ng-container>
+<ng-container *ngFor="let Product of Products.products ; let i = index" >
+    <div class="col-md-3 mt-5 " *ngIf="i>6 && i<=12">
+        <a href="#" >
         <span class="price">{{Product.price}}</span>
         <div class="card-4">
             <div class="overlay-circle"></div>
@@ -65,9 +73,12 @@
                 <div class="description">
                     <h6>{{Product.Description}}</h6>
                 </div>
+                <a href="#" class="text-white"><u>More Detials</u></a>   
+
             </div>
         </div>
     </a>           
 </div>
+</ng-container>
     </div>
 </div>
