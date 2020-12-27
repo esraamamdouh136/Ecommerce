@@ -12,6 +12,10 @@ import {HttpClientModule} from'@angular/common/http';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { SharedRoutingModule } from './shared/shared-routing.module';
+import {AccountRoutingModule} from './account/account-routing.module';
+import { LoginComponent } from './account/login/login.component';
+
 
 
 @NgModule({
@@ -21,6 +25,7 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     FooterComponent,
     NavbarComponent, HeaderComponent ,
+    LoginComponent,
     ProductComponent
 
     
@@ -30,7 +35,14 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
     NgMultiSelectDropDownModule.forRoot(),
-    FormsModule
+    FormsModule , 
+    RouterModule.forRoot([]),
+    SharedRoutingModule,
+    AccountRoutingModule,
+  
+
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

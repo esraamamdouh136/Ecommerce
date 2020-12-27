@@ -4,6 +4,8 @@ import { navbar } from './../assets/JsonFiles/navbar';
 import { sliders } from './../assets/JsonFiles/sliders'; 
 import { DropdownList } from './../assets/JsonFiles/Search'; 
 import { Product } from './../assets/JsonFiles/product'; 
+import { item } from './../assets/JsonFiles/item'; 
+
 import { Observable } from 'rxjs';
 
 
@@ -16,8 +18,7 @@ export class ServicesService {
   _Urlsliders = "../assets/JsonFiles/slider.json"
   _UrlSearch = "../assets/JsonFiles/Search.json"
   _UrlProduct = "../assets/JsonFiles/Products.json"
-
-
+  _OneProduct : item[] = [];
 
 
   constructor(public Http : HttpClient) { }
@@ -34,4 +35,7 @@ export class ServicesService {
   getProduct ():Observable<Product[]> {
     return this.Http.get<Product[]>(this._UrlProduct);
   }
+  addItem(_OneProduct: item) {
+    this._OneProduct.push(_OneProduct);
+}
 }

@@ -1,5 +1,4 @@
-import { ElementRef , HostListener } from '@angular/core';
-import { Component, OnInit, ɵCurrencyIndex } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ServicesService} from '../../services.service';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
 
@@ -10,20 +9,21 @@ import { IDropdownSettings } from 'ng-multiselect-dropdown';
 })
 export class NavbarComponent implements OnInit {
  dropdownSettings:IDropdownSettings = {};
-public data : any= [] 
-dropdownList : any = [];
+  public data : any= [] 
+  dropdownList : any = [];
   selectedItems : Array<any> = [];
-  constructor(public Services : ServicesService , private _el: ElementRef) { 
-    console.log(this.dropdownList)
-   
+  AddCard : Array<any> = [];
+  constructor(public Services : ServicesService ) { 
+    this.AddCard = this.Services._OneProduct
   }
+
+
+  
 
   ngOnInit(): void {
     this.Services.getNavbar().subscribe( res => this.data = res)
     this.Services.getSearch().subscribe( res => this.dropdownList = res)
-
-   
-  
+     
     this.dropdownSettings = {
       singleSelection: false,
       idField: 'item_id',
@@ -34,12 +34,8 @@ dropdownList : any = [];
       allowSearchFilter: true
     };
   }
-  onItemSelect(item: any) {
-    console.log(item);
-  }
-  onSelectAll(items: any) {
-    console.log(items);
-  }
+
+ 
    
 
 

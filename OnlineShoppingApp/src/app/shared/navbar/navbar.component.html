@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item" *ngFor="let item of data.items" id="Dropdown">
-        <a class="nav-link" href="#">
+        <a class="nav-link" routerLink="{{item.class}}">
           {{item.item}}
         </a>
         <div class="dropdown div-dropdown " *ngIf="item.Submenu">
@@ -35,9 +35,33 @@
       <li class="nav-item">
         <a class="nav-link"><i class="fas fa-search" data-toggle="modal" data-target="#exampleModalCenter"></i></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link"><i class="fas fa-shopping-bag"></i></a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-shopping-bag  Shopping-bag"></i><span class="length">{{AddCard.length}}</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <p *ngIf="AddCard.length < 1" class="text-center">No Product Yet </p>
+         <a href="" *ngFor="let Cart of AddCard ; let i = index" class="p-2 row no-gutters">
+           <div class="col-md-4 image-cart">
+            <img src="{{Cart.image}}" class="img-fluid">
+           </div>
+           <div class="col-md-8 details-cart">
+           <span>{{Cart.name}}</span>
+           <hr>
+           <p>{{Cart.Description}}</p>
+           <span>{{Cart.price}}</span>
+          </div>
+         </a>
+         <hr>
+         <div class="d-flex p-2">
+          <button href="" class="btn btn-style mr-3" [disabled]="AddCard.length < 1">Buy</button>
+          <button href="" class="btn btn-dark w-50" [disabled]="AddCard.length < 1">Cart Page</button>
+         </div>
+        </div>
       </li>
+    
+ 
 
     </ul>
   </div>

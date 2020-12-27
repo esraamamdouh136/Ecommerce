@@ -1,6 +1,6 @@
 {
   "items" : [
-    {"item" : "Home"},
+    {"item" : "Home" , "class" : "home"},
     {"item" :  "About" ,
       "Submenu" :[
         {"name" : "About Us" }, 
