@@ -1,21 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SharedComponent } from './shared/shared.component';
-import { HomeComponent } from './shared/home/home.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { ProductComponent } from './shared/product/product.component';
+import { SharedComponent } from './components/shared/shared.component';
+import { HomeComponent } from './components/shared/home/home.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { ProductComponent } from './components/shared/product/product.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {HttpClientModule} from'@angular/common/http';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SharedRoutingModule } from './shared/shared-routing.module';
-import {AccountRoutingModule} from './account/account-routing.module';
-import { LoginComponent } from './account/login/login.component';
-
+import { SharedRoutingModule } from './components/shared/shared-routing.module';
+import {AccountRoutingModule} from './components/account/account-routing.module';
+import { LoginComponent } from './components/account/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { AlertComponent } from './components/account/alert/alert.component';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { LoginComponent } from './account/login/login.component';
     FooterComponent,
     NavbarComponent, HeaderComponent ,
     LoginComponent,
-    ProductComponent
+    ProductComponent,
+    AlertComponent
 
     
   ],
@@ -39,6 +42,8 @@ import { LoginComponent } from './account/login/login.component';
     RouterModule.forRoot([]),
     SharedRoutingModule,
     AccountRoutingModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
   
 
     

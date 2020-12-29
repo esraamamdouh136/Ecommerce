@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from'@angular/common/http'
-import { navbar } from './../assets/JsonFiles/navbar'; 
-import { sliders } from './../assets/JsonFiles/sliders'; 
-import { DropdownList } from './../assets/JsonFiles/Search'; 
-import { Product } from './../assets/JsonFiles/product'; 
-import { item } from './../assets/JsonFiles/item'; 
+import { navbar } from '../model/navbar'; 
+import { sliders } from '../model/sliders'; 
+import { DropdownList } from '../model/Search'; 
+import { Product } from '../model/product'; 
+import { item } from '../model/item'; 
 
 import { Observable } from 'rxjs';
 

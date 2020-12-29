@@ -87,7 +87,7 @@ nav {
     -webkit-transform: translateY(0);
   }
   .navbar-toggler-icon {
-    background-image: url("../../../assets/image/menu.png") !important;
+    background-image: url("../../../../assets/image/menu.png") !important;
   }
   
   .dropdown-item.active, .dropdown-item:active {
@@ -133,6 +133,11 @@ nav {
 }
 .btn-style {
 width: 50%;
+}
+
+.addProductOnCart {
+  height: 250px;
+  overflow-y: scroll;
 }
 
 }

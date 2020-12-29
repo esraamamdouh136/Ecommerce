@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicesService } from 'src/app/services.service';
+import { ServicesService } from '../../../services/services.service';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -13,8 +14,11 @@ export class ProductComponent implements OnInit {
 
   constructor(
     public Services : ServicesService ,
+    private toastr: ToastrService
      ) {
    }
+
+ 
 
   ngOnInit(): void {
     this.Services.getProduct().subscribe( res => this.Products = res)
@@ -22,6 +26,9 @@ export class ProductComponent implements OnInit {
   }
 
   AddtoCard(id:number , name:string , Description: string , image:string  , price:string ) {
+    this.toastr.success( name , 'success You Added ' , {
+      timeOut: 3000,
+    })
     let ProductaddedtoCard = {
       id: id,
       name: name,

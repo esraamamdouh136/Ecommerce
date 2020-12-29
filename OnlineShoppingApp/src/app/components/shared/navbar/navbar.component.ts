@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ServicesService} from '../../services.service';
+import {ServicesService} from '../../../services/services.service';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
 
 @Component({
