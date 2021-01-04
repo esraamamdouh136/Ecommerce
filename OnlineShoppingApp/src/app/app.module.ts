@@ -17,7 +17,6 @@ import {AccountRoutingModule} from './components/account/account-routing.module'
 import { LoginComponent } from './components/account/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { AlertComponent } from './components/account/alert/alert.component';
 
 
 @NgModule({
@@ -29,7 +28,7 @@ import { AlertComponent } from './components/account/alert/alert.component';
     NavbarComponent, HeaderComponent ,
     LoginComponent,
     ProductComponent,
-    AlertComponent
+    
 
     
   ],
