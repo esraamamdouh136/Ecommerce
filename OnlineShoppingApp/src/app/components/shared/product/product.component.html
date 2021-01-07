@@ -1,83 +1,89 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 mt-5 pt-5">
-            <div class="title text-center">
-            <h2>What to Buy During the Shopbop Sale: Event of the Season 2020!</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-        </div>
+  <div class="row">
+    <div class="col-md-12 mt-5 pt-5">
+      <div class="title text-center">
+        <h2>What to Buy During the Shopbop Sale: Event of the Season 2020!</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy</p>
+      </div>
     </div>
-    </div>
+  </div>
 </div>
 
 
 <div class="mx-5">
-    <div class="row product">
-        <ng-container *ngFor="let Product of Products.products ; let i = index">
-            <div class="col-md-3 mt-5" *ngIf="i<=3">
-              <span class="id" hidden>{{Product.id}}</span>
-                <span class="price" >{{Product.price}}</span>
-                <div class="card-4">
-                    <div class="overlay-circle"></div>
-                 
-                    <img src="{{Product.image}}" class="img-fluid">
-               
-                    <div class="product-caption">
-                        <div class="d-flex">
-                            <p (click)="AddtoCard(Product.id , Product.name , Product.Description , Product.image , Product.price )"><i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
-                            <p><i class="far fa-heart px-2"></i>Wishlist</p>
-                        </div>
-                        <h6>{{Product.name}}</h6>
-                        <div class="description">
-                            <h6>{{Product.Description}}</h6>
-                        </div>
-                        <a href="#" class="text-white"><u>More Detials</u></a>   
-                    </div>
-                </div>        
-        </div>
-        </ng-container>
-        <ng-container *ngFor="let Product of Products.products ; let i = index">
-        <div class="col-md-6 mt-5" *ngIf="i > 3 && i <=6" >
-            <span class="id" hidden>{{Product.id}}</span>
-            <span class="price">{{Product.price}}</span>
-            <div class="card-4">
-                <div class="overlay-circle"></div>
-                <img src="{{Product.image}}" class="img-fluid">
-                <div class="product-caption">
-                    <div class="d-flex">
-                        <p (click)="AddtoCard(Product.id , Product.name , Product.Description , Product.image , Product.price )"><i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
-                        <p><i class="far fa-heart px-2"></i>Wishlist</p>
-                    </div>
-                    <h6>{{Product.name}}</h6>
-                    <div class="description">
-                        <h6>{{Product.Description}}</h6>
-                    </div>
-                    <a href="#" class="text-white"><u>More Detials</u></a>   
-                </div>
-            </div>
-    </div>
-</ng-container>
-<ng-container *ngFor="let Product of Products.products ; let i = index" >
-    <div class="col-md-3 mt-5 " *ngIf="i>6 && i<=12">
+  <div class="row product">
+    <ng-container *ngFor="let Product of Products.products ; let i = index">
+      <div class="col-md-3 mt-5" *ngIf="i<=3">
         <span class="id" hidden>{{Product.id}}</span>
         <span class="price">{{Product.price}}</span>
         <div class="card-4">
-            <div class="overlay-circle"></div>
-            <img src="{{Product.image}}" class="img-fluid">
-            <div class="product-caption">
-                <div class="d-flex">
-                    <p (click)="AddtoCard(Product.id , Product.name , Product.Description , Product.image , Product.price )"><i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
-                    <p><i class="far fa-heart px-2"></i>Wishlist</p>
-                </div>
-                <h6>{{Product.name}}</h6>
-                <div class="description">
-                    <h6>{{Product.Description}}</h6>
-                </div>
-                <a href="#" class="text-white"><u>More Detials</u></a>   
+          <div class="overlay-circle"></div>
 
+          <img src="{{Product.image}}" class="img-fluid">
+
+          <div class="product-caption">
+            <div class="d-flex">
+              <p (click)="AddtoCard(Product.id , Product.name , Product.Description , Product.image , Product.price )">
+                <i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
+              <p><i class="far fa-heart px-2"></i>Wishlist</p>
             </div>
+            <h6>{{Product.name}}</h6>
+            <div class="description">
+              <h6>{{Product.Description}}</h6>
+            </div>
+            <a href="#" class="text-white"><u>More Detials</u></a>
+          </div>
         </div>
-</div>
-</ng-container>
-<a href="" class="btn btn-dark mx-auto w-25 mt-3">SEE MORE</a>
-    </div>
+      </div>
+    </ng-container>
+    <ng-container *ngFor="let Product of Products.products ; let i = index">
+      <div class="col-md-6 mt-5" *ngIf="i > 3 && i <=6">
+        <span class="id" hidden>{{Product.id}}</span>
+        <span class="price">{{Product.price}}</span>
+        <div class="card-4">
+          <div class="overlay-circle"></div>
+          <img src="{{Product.image}}" class="img-fluid">
+          <div class="product-caption">
+            <div class="d-flex">
+              <p (click)="AddtoCard(Product.id , Product.name , Product.Description , Product.image , Product.price )">
+                <i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
+              <p><i class="far fa-heart px-2"></i>Wishlist</p>
+            </div>
+            <h6>{{Product.name}}</h6>
+            <div class="description">
+              <h6>{{Product.Description}}</h6>
+            </div>
+            <a href="#" class="text-white"><u>More Detials</u></a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngFor="let Product of Products.products ; let i = index">
+      <div class="col-md-3 mt-5 " *ngIf="i>6 && i<=12">
+        <span class="id" hidden>{{Product.id}}</span>
+        <span class="price">{{Product.price}}</span>
+        <div class="card-4">
+          <div class="overlay-circle"></div>
+          <img src="{{Product.image}}" class="img-fluid">
+          <div class="product-caption">
+            <div class="d-flex">
+              <p (click)="AddtoCard(Product.id , Product.name , Product.Description , Product.image , Product.price )">
+                <i class="fas fa-cart-plus pr-2"></i> Add Cart</p>
+              <p><i class="far fa-heart px-2"></i>Wishlist</p>
+            </div>
+            <h6>{{Product.name}}</h6>
+            <div class="description">
+              <h6>{{Product.Description}}</h6>
+            </div>
+            <a href="#" class="text-white"><u>More Detials</u></a>
+
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <a href="" class="btn btn-dark mx-auto w-25 mt-3">SEE MORE</a>
+
+  
+  </div>
 </div>

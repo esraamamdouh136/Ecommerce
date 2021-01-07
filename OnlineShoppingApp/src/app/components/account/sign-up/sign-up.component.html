@@ -1,1 +1,127 @@
-<p>sign-up works!</p>
+<div class="container border mb-5 mt-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../../../assets/image/sign.jpg" class="w-100">
+    </div>
+    <div class="col-md-6 mt-5">
+      <div class="title text-center">
+        <h2 class="text-center">Create New Account</h2>
+        <small class="">Welcome to our website</small>
+      </div>
+      <!--Sign Up with Social Media-->
+      <div class="social-buttons mb-3">
+        <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+          <span class="social-button__inner">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+        </a>
+        <a href="#" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+          <span class="social-button__inner">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+        </a>
+        <a href="#" class="social-buttons__button social-button social-button--snapchat" aria-label="SnapChat">
+          <span class="social-button__inner">
+            <i class="fab fa-snapchat-ghost"></i>
+          </span>
+        </a>
+        <a href="#" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+          <span class="social-button__inner">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+        <a href="#" class="social-buttons__button social-button social-button--codepen" aria-label="CodePen">
+          <span class="social-button__inner">
+            <i class="fab fa-codepen"></i>
+          </span>
+        </a>
+      </div>
+      <form [formGroup]="form">
+        <!--Row one-->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" placeholder="First Name" formControlName="firstName" class="form-control">
+            <div class="alert alert-danger"
+              *ngIf="!firstName!.valid && (firstName!.dirty ||firstName!.touched)">
+              <div [hidden]="!firstName.errors.required">
+                First Name is required
+              </div>
+              <div [hidden]="!firstName.errors.minlength">
+                Min Length is 10
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <input type="text" placeholder="Last Name" formControlName="lastName" class="form-control"
+               />
+            <div class="alert alert-danger" role="alert"
+              *ngIf="!lastName!.valid && (lastName!.dirty || lastName!.touched) ">
+              <div [hidden]="!lastName.errors.required">
+                Last Name is required
+              </div>
+              <div [hidden]="!lastName.errors.maxlength">
+                Max Length is 10
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--Row two-->
+        <div class="form-group mb-3">
+          <input type="text" class="form-control" placeholder="User name" formControlName="userName" />
+          <div class="alert alert-danger" role="alert"
+            *ngIf="!userName!.valid && (userName!.dirty || userName!.touched)">
+            <div [hidden]="!userName.errors.required">
+              User Name is required
+            </div>
+            <div [hidden]="!userName.errors.maxlength">
+              Max Length is 10
+            </div>
+          </div>
+        </div>
+        <!--Row three-->
+        <div class="form-group mb-3">
+          <input type="text" class="form-control" placeholder="@email" formControlName="email">
+          <div class="alert alert-danger" role="alert"
+            *ngIf="!email!.valid && (email!.dirty || email!.touched) ">
+            <div [hidden]="!email!.errors.required">
+              email is required
+            </div>
+            <div [hidden]="!email.errors.minlength">
+              Min Length is 15
+            </div>
+          </div>
+        </div>
+        <!--Row Four-->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control" placeholder="Password" formControlName="password">
+            <div class="alert alert-danger" role="alert"
+              *ngIf="!password!.valid && (password!.dirty || password!.touched)">
+              <div [hidden]="!password!.errors.required">
+                password is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control" placeholder="Confirm Password" formControlName="confirmPassword">
+            <div class="alert alert-danger" role="alert"
+              *ngIf="!confirmPassword!.valid && (confirmPassword!.dirty || confirmPassword!.touched)">
+              <div [hidden]="!confirmPassword!.errors.required">
+                password is required
+              </div>
+              <div [hidden]="confirmPassword!.errors.MustMatch">
+                password is not Match
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end my-3 form-group">
+          <button class="btn btn-dark mr-2 w-25" [disabled]="!form.valid">Sign Up</button>
+          <a routerLink="../login w-25 " class="btn btn-danger">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { transition } from '@angular/animations';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public CurrentNav : string = '';
+  constructor(public router : Router){}
   title = 'OnlineShoppingApp';
+
 }
 
  
