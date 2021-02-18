@@ -13,12 +13,13 @@ export class NavbarComponent implements OnInit {
   dropdownList : any = [];
   selectedItems : Array<any> = [];
   AddCard : Array<any> = [];
+  
   constructor(public Services : ServicesService ) { 
     this.AddCard = this.Services._OneProduct
+
   }
+ 
 
-
-  
 
   ngOnInit(): void {
     this.Services.getNavbar().subscribe( res => this.data = res)
